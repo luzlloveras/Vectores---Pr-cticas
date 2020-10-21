@@ -1,2 +1,2 @@
-# Vectores---Pr-cticas
+# Vectores---Practicas
 Vectores - Prácticas en lenguaje C
