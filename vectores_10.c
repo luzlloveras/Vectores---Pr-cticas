@@ -23,7 +23,7 @@ int main()
 }
 
 // Se cargan aleatoriamente valores para cada posicion del vector
-void CARGAR (int vector[], int n)
+void CARGAR (int vec[], int n)
 {
     int i;
     for (i = 0; i < n; i++)
@@ -33,7 +33,7 @@ void CARGAR (int vector[], int n)
 }
 
 // Se imprimen los valores de cada posicion del vector
-void MIRAR (int vector[], int n)
+void MIRAR (int vec[], int n)
 {
     int i;
     for (i = 0; i < n; i++)
@@ -43,23 +43,23 @@ void MIRAR (int vector[], int n)
     printf("\n");
     for (i = 0; i < n; i++)
     {
-        printf("%6d", vector[i]);
+        printf("%6d", vec[i]);
     }
     printf("\n");
 }
 
 // Se intercambia el valor de la posicion incial del vector con el valor minimo
-void INTERCAMBIO (int vector[], int n)
+void INTERCAMBIO (int vec[], int n)
 {
     int i, aux, posicion_minimo = 0;
     for (i = 1; i < n; i++)
     {
-        if (vector[i] < vector[posicion_minimo])
+        if (vec[i] < vec[posicion_minimo])
         {
             posicion_minimo = i;
         }
     }
-    aux = vector[0];
-    vector[0] = vector[posicion_minimo];
-    vector[posicion_minimo] = aux;
+    aux = vec[0];
+    vec[0] = vec[posicion_minimo];
+    vec[posicion_minimo] = aux;
 }
