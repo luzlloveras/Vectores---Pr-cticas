@@ -12,9 +12,7 @@ int main()
 
     printf("Impresion de los valores del vector:\n");
     for (i = 0; i < n; i++)
-    {
         printf("\nEl vector[%d] tiene un valor de %d y su direccion en memoria es %p \n", i, vector[i], &vector[i]);
-    }
 
     return 0;
 }
