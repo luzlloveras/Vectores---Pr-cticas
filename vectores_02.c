@@ -14,15 +14,11 @@ int main()
 
     // Ingreso de valores del vector
     for (i = 0; i < numero; i++)
-    {
         vector[i] = 2 * i + 1;
-    }
 
     // Impresion de posiciones del vector 
     for (i = 0; i < numero; i++)
-    {
         printf("%10d", vector[i]);
-    }
     printf("\n");
 
     return 0;
