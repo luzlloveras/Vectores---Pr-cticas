@@ -27,9 +27,7 @@ void CARGAR (int v[], int n)
 {
     int i;
     for (i = 0; i < n; i++)
-    {
         v[i] = rand() % 100;
-    }
 }
 
 // Se imprimen los valores de cada posicion del vector
@@ -38,14 +36,10 @@ void MIRAR (int v[], int n)
     int i;
     printf("\nIMPRESION DE LOS DATOS\n");
     for (i = 0; i < n; i++)
-    {
         printf("%4d", i);
-    }
     printf("\n");
     for (i = 0; i < n; i++)
-    {
         printf("%4d", v[i]);
-    }
     printf("\n");
 }
 
@@ -58,12 +52,8 @@ void SELECCION (int v[], int n)
     {
         posmin = primero;
         for (i = primero+1; i < n; i++)
-        {
             if (v[i] < v[posmin])
-            {
                 posmin = i;
-            }
-        }
 
         //swapping
         aux = v[posmin];
