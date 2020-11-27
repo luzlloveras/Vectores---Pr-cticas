@@ -11,21 +11,15 @@ int main()
 
     // Copia directa de vectores
     for (i = 0; i < sizeof(vector1)/sizeof(int); i++)
-    {
         vector2[i] = vector1[i];
-    }
 
     printf("\nLos valores del vector 1 son:\n");
     for (i = 0; i < sizeof(vector1)/sizeof(int); i++)
-    {
         printf("%10d", vector1[i]);
-    }
 
     printf("\nLos valores del vector 2 son:\n");
     for (i = 0; i < sizeof(vector2)/sizeof(int); i++)
-    {
         printf("%10d", vector2[i]);
-    }
     
     return 0;
 }
