@@ -27,9 +27,7 @@ void CARGAR (int v[], int n)
 {
     int i;
     for (i = 0; i < n; i++)
-    {
         v[i] = rand() % 100;
-    }
 }
 
 // Se imprimen los valores de cada posicion del vector
@@ -39,14 +37,10 @@ void MIRAR (int v[], int n)
 
     printf("\nPOSICIONES\t");
     for (i = 0; i < n; i++)
-    {
         printf("%4d", i);
-    }
     printf("\nVALORES   \t");
     for (i = 0; i < n; i++)
-    {
         printf("%4d", v[i]);
-    }
     printf("\n");
 }
 
@@ -58,17 +52,13 @@ void BUSQUEDA (int v[], int n)
     printf("Ingrese numero a buscar\n");
     scanf("%d", &buscado);
     for (i = 0; i < n-1; i++)
-    {
     	if (v[i] == buscado)
     	{
     		printf("se encontro el %d en POSICION %d\n", buscado, i);
     		flag = 1;
-		}
 	}
 	if (flag == 0)
-	{
 		printf("No se encontro el valor %d\n", buscado);
-	}
 }
 
 
