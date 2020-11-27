@@ -34,7 +34,5 @@ void MIRAR (int vector[], int numero)
     int i;
     printf("Impresion de los datos\n");
     for (i = 0; i < numero; i++)
-    {
         printf("%6d", vector[i]);
-    }
 }
