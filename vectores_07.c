@@ -24,9 +24,7 @@ void CARGAR (int vector[], int numero)
 {
     int i;
     for (i = 0; i < numero; i++)
-    {
         vector[i] = rand() % 100;
-    }
 }
 
 void MIRAR (int vector[], int numero)
@@ -34,13 +32,9 @@ void MIRAR (int vector[], int numero)
     int i;
     printf("Impresion de los datos\n");
     for (i = 0; i < numero; i++)
-    {
         printf("%4d", i);
-    }
     printf("\n");
     for (i = 0; i < numero; i++)
-    {
         printf("%4d", vector[i]);
-    }
     printf("\n");
 }  
